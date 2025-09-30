@@ -74,6 +74,14 @@ EMAIL_DESTINATARIO = 'email_destiono@email.com'
   
  Estes são exemplos de insights gerados e enviados via email pela aplicação
 
+ # Tecnologias Empregadas
+  - Python ( Pandas, Logging,  dontenv,)
+  - Api Gemini
+
+# Entrega
+ - Codigo no GITHUB
+ - Dados parquet em /gold
+ - Readme Documentado
  # Desenvolvido por:
  ```
 Caio Macedo Santos - 2502444
