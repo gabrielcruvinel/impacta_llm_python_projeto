@@ -17,7 +17,7 @@ def extract_json_data(iso_list):
         return False
     #leitura dos arquivos json na pasta ra w
     else:
-        os.makedirs("staging", exist_ok=True)
+        os.makedirs("silver", exist_ok=True)
         #percorro todos os arquivos da pasta raw
         dados_processados = [] # Lista para armazenar todos os dados para o DataFrame final
         for arquivo in os.listdir('raw'):
@@ -56,11 +56,11 @@ def extract_json_data(iso_list):
             df = pd.DataFrame(dados_processados)
             
             # Garante que o diretório de saída exista
-            output_dir = os.path.dirname('staging')
+            output_dir = os.path.dirname('silver')
             if output_dir:
                 os.makedirs(output_dir, exist_ok=True)
             # Salva o DataFrame em um arquivo CSV
-            df.to_csv('staging/result.csv', index=False, sep=';', encoding='utf-8-sig')
+            df.to_csv('silver/result.csv', index=False, sep=';', encoding='utf-8-sig')
             
             logger.info(f"Arquivo CSV consolidado salvo com sucesso em staging/result.csv")
             return True

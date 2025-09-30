@@ -13,6 +13,7 @@ Ele tambem contempla o envio de um email informativo ao final da execução, afi
 ├── .env  # Variaveis de ambiente
 ├── requirements.txt 
 ├── gold # Pasta com arquivos parquet particionado pelo nome do cambio e data
+├── silver #Camada intermediaria de dados, que armazena a transformacao em CSV
 ├── raw # Pasta de dados bruta
 ├── src #Pasta com codigos fonte
     ├── Ingestor.py # ETL De Injestao de dados
@@ -21,7 +22,7 @@ Ele tambem contempla o envio de um email informativo ao final da execução, afi
     ├── SendEmail.py # Envio de email
     ├── Transform.py # ETL de Transformação os dados brutos 
     └── main.py
-└── staging #Cama intermediaria de dados, que armazena a transformacao em CSV
+
 ```
 
 # Clone repositorio

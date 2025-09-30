@@ -10,13 +10,13 @@ def load_parquet():
 
     try:
         # Verifica se o arquivo de entrada existe
-        if not os.path.exists('staging/result.csv'):
-            logger.error(f"Arquivo de entrada não encontrado em: staging/result.csv")
+        if not os.path.exists('stagsilvering/result.csv'):
+            logger.error(f"Arquivo de entrada não encontrado em: silver/result.csv")
             return False
 
         # 1. Lê o arquivo CSV para um DataFrame do Pandas
-        logger.info(f"Lendo o arquivo CSV: staging/result.csv")
-        df = pd.read_csv('staging/result.csv', sep=';')
+        logger.info(f"Lendo o arquivo CSV: silver/result.csv")
+        df = pd.read_csv('silver/result.csv', sep=';')
 
         # Garante que o diretório de saída exista
         output_dir = os.path.dirname('gold')
