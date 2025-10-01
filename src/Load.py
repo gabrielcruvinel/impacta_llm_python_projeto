@@ -10,7 +10,7 @@ def load_parquet():
 
     try:
         # Verifica se o arquivo de entrada existe
-        if not os.path.exists('stagsilvering/result.csv'):
+        if not os.path.exists('silver/result.csv'):
             logger.error(f"Arquivo de entrada não encontrado em: silver/result.csv")
             return False
 
